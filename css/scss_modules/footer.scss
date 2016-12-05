@@ -1,0 +1,55 @@
+footer {
+	background-color: $clr-footer-bg;
+	position: relative;
+	height: $height-footer;
+	margin-top: -$height-footer;
+	min-width: $width-wrapper;
+}
+
+.footer--left, .footer--right {
+	float: left;
+	width: 50%;
+}
+
+.footer--left {
+	padding-top: 18px;
+}
+
+.footer--right {
+	text-align: right;
+	padding-top: 10px;
+}
+
+.copyright {
+	font-size: $fnt-size-3;
+	font-weight: 100;
+	color: $clr-text-lighter;
+}
+
+.socials {
+	list-style: none;
+}
+
+.social--item {
+	@include iblock-center;
+	margin-left: 6px;
+}
+
+.social--link {
+	width: 31px;
+	height: 31px;
+	display: block;
+	background: no-repeat center center;
+}
+
+$socials: fb, vk, tw;
+
+@each $st in $socials
+{
+    .social--link-#{$st} {
+        background-image: url('../img/icons/#{$st}_idl.png');
+        &:hover {
+            background-image: url('../img/icons/#{$st}_hov.png');
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.sidebar {
+	float: left;
+	width: 222px;
+}
+
+.menu--list {
+	list-style: none;
+	margin-top: 5px;
+}
+
+.menu--link {
+	display: block;
+	padding: 10px 22px 10px 0;
+	text-align: right;
+	text-decoration: none;
+	color: $clr-text-header;
+	border-right: 6px solid transparent;
+	&:hover {
+		color: $clr-text-link;
+	}
+}
+
+.menu--link-active {
+	font-weight: 700;
+	color: $clr-text-link;
+	border-color: $clr-text-link;
+}
+
+.menu--icon, .menu--label {
+	@include iblock-center;
+}
+
+.menu--label {
+	margin-left: 4px;
+}

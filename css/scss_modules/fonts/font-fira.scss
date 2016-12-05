@@ -1,0 +1,23 @@
+@mixin set-font($type-name, $weight) {
+  font-family: 'fira';
+    src: url('../fonts/firasans-#{$type-name}-webfont.woff') format('woff'),
+         url('../fonts/firasans-#{$type-name}-webfont.svg#fira_#{$type-name}') format('svg');
+    font-weight: $weight;
+    font-style: normal;	
+}
+
+@font-face {
+	@include set-font(light, 100);
+}
+
+@font-face {
+	@include set-font(regular, 400);
+}
+
+@font-face {
+	@include set-font(medium, 600);
+}
+
+@font-face {
+	@include set-font(bold, 700);
+}
