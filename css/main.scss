@@ -121,13 +121,11 @@ html {
 		color: $clr-text-white;
 		background-color: $clr-text-active;
 	}
-}
-
-.mp-button--icon {
-	@include iblock-center;
-}
-
-.mp-button--label {
-	@include iblock-center;
-	margin-left: 10px;
+	&--icon {
+		@include iblock-center;
+	}
+	&--label {
+		@include iblock-center;
+		margin-left: 10px;
+	}
 }
