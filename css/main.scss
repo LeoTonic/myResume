@@ -103,14 +103,20 @@ html {
 	margin-bottom: 14px;
 }
 
-.mp-button {
+.ctl-button {
 	padding: 7px 13px;
-	border: 2px solid $clr-text-active;
-	border-radius: 25px;
+	border-width: 2px;
+	border-style: solid;
 	font-size: $fnt-size-3;
 	font-weight: 700;
-	color: $clr-text-active;
 	text-decoration: none;
+	border-radius: 25px;
+}
+
+.mp-button {
+	@extend .ctl-button;
+	border-color: $clr-text-active;
+	color: $clr-text-active;
 	&:hover {
 		color: $clr-text-white;
 		background-color: $clr-text-active;
