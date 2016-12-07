@@ -1,0 +1,50 @@
+.welcome {
+	background-image: url('../img/decor/geometry2.png');
+	background-position: left top;
+	background-repeat: repeat;
+	padding-top: 220px;
+	box-sizing: border-box;
+	@include wh-val-100;
+
+	&--photo {
+		position: absolute;
+		top: 150px;
+		left: 50%;
+		margin-left: -70px;
+		img {
+			width: 139px;
+			height: 139px;
+			border-radius: 50%;
+			border: 2px solid $clr-header-border;	
+		}
+	}
+}
+
+.entry {
+  border-radius: 10px;
+  background-color: $clr-text-white;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+	position: relative;
+  width: 300px;
+	margin: 0 auto;
+	padding-top: 85px;
+	overflow: hidden;
+
+	&--username {
+		text-align: center;
+		width: 180px;
+		margin: 0 auto;
+		font-size: $fnt-size-1;
+		font-weight: 600;
+		color: $clr-text-header;
+		margin-bottom: 12px;
+	}
+
+	&--buttonblock {
+		padding: 20px;
+		background-color: $clr-text-link;
+	}
+	&--button {
+		text-align: center;
+	}
+}

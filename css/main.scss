@@ -43,6 +43,7 @@ $height-header: 80px;
 @import 'scss_modules/normalize';
 @import 'scss_modules/fonts/font-awesome.scss';
 @import 'scss_modules/fonts/font-fira.scss';
+@import 'scss_modules/welcome';
 @import 'scss_modules/header';
 @import 'scss_modules/sidebar';
 @import 'scss_modules/about';
@@ -104,13 +105,15 @@ html {
 }
 
 .ctl-button {
-	padding: 7px 13px;
+	display: inline-block;
+	padding: 8px 13px;
 	border-width: 2px;
 	border-style: solid;
 	font-size: $fnt-size-3;
 	font-weight: 700;
 	text-decoration: none;
 	border-radius: 25px;
+	box-sizing: border-box;
 }
 
 .mp-button {
@@ -127,5 +130,15 @@ html {
 	&--label {
 		@include iblock-center;
 		margin-left: 10px;
+	}
+}
+
+.en-button {
+	@extend .ctl-button;
+	border-color: $clr-text-white;
+	color: $clr-text-white;
+	&:hover {
+		color: $clr-text-link;
+		background-color: $clr-text-white;
 	}
 }
