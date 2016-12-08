@@ -121,6 +121,12 @@
 		}
 	}
 	/* main page */
+
+	.wrapper {
+		&:after {
+			height: 80px;
+		}
+	}
 	.container {
 		width: 480px;
 	}
