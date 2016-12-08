@@ -3,7 +3,6 @@ footer {
 	position: relative;
 	height: $height-footer;
 	margin-top: -$height-footer;
-	min-width: $width-wrapper;
 }
 
 .footer--left, .footer--right {
@@ -32,7 +31,7 @@ footer {
 
 .social--item {
 	@include iblock-center;
-	margin-left: 6px;
+	margin-left: 3px;
 }
 
 .social--link {

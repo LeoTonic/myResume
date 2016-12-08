@@ -5,23 +5,23 @@
 	background-color: #ddd;
 	position: absolute;
 	right: 100%;
-	margin-right: 17px;
+	margin-right: 20px;
 }
 
 .career {
-	padding-top: 4px;
+	padding-top: 2px;
 	&:after {
 		@include clearfix;
 	}
-}
 
-.career--left {
-	float: left;
-}
+	&--left {
+		float: left;
+	}
 
-.career--right {
-	float: right;
-	width: 460px;
+	&--right {
+		float: right;
+		width: 478px;
+	}
 }
 
 .career--image {
@@ -126,7 +126,7 @@
 		border-radius: 50%;
 		background-color: $clr-text-link;
 		position: absolute;
-		right: -25px;
+		right: -22px;
 		top: 50%;
 		margin-top: -10px;
 		border: 5px solid $clr-body-bg;

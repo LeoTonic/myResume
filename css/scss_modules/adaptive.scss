@@ -1,0 +1,283 @@
+@media screen and (max-width: 992px) {
+	/* laptop version */
+	/* hello page */
+	.welcome {
+		.entry {
+			width: 352px;
+			margin-left: -176px;
+			padding-top: 68px;
+		}
+		&--photo {
+			margin-left: -52px;
+			margin-top: -202px;
+			img {
+				width: 104px;
+				height: 104px;
+			}
+		}
+	}
+	/* main page */
+	.page-content {
+		margin-left: 0;
+		width: 730px;
+	}
+
+	.container {
+		width: 730px;
+	}
+
+	.sidebar {
+		float: none;
+		display: block;
+		width: 100%;
+		.menu {
+			&--list {
+				margin-top: 0;
+			}
+			&--item {
+				display: inline-block;
+			}
+			&--link {
+				border: 0;
+				padding-top: 8px;
+				padding-right: 26px;
+			}
+			&--link-active {
+				border: 0;
+			}
+		}
+	}
+
+	/* about page */
+	.about {
+		margin-top: 24px;
+		&--left {
+			width: 230px;
+		}
+		&--right {
+			width: 444px;
+		}
+
+		&--photo {
+			margin-top: 4px;
+			width: 165px;
+			height: 165px;
+		}
+		&--info {
+			height: 380px;
+		}
+	}
+	.mp-button {
+		margin-right: 28px;
+	}
+	/* career page */
+	.career {
+		padding-top: 24px;
+		&--image {
+			width: 226px;
+			height: 226px;
+			margin-left: 4px;
+		}
+
+		&--right {
+			width: 468px;
+		}
+
+		&--block {
+			width: 356px;
+		}
+	}
+
+	/* portfolio */
+	.portfolio {
+		&--list {
+			margin-top: 0;
+		}
+		&--item {
+			width: 228px;
+		}
+		&--desc {
+			padding: 16px 18px 16px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	/* tablet version */
+	/* hello page */
+	.welcome {
+		.entry {
+			width: 352px;
+			margin-left: -176px;
+			padding-top: 68px;
+		}
+		&--photo {
+			margin-left: -52px;
+			margin-top: -202px;
+			img {
+				width: 104px;
+				height: 104px;
+			}
+		}
+	}
+	/* main page */
+	.container {
+		width: 480px;
+	}
+	.page-content {
+		width: 476px;
+		margin-left: 0;
+		float: none;
+		&--title {
+			text-align: center;
+			margin: 0 0 2px 0;
+		}
+	}
+
+	.sidebar {
+		float: none;
+		display: block;
+		width: 100%;
+		.menu {
+			&--list {
+				margin-top: 0;
+			}
+			&--item {
+				display: inline-block;
+			}
+			&--link {
+				border: 0;
+				padding-top: 8px;
+				padding-right: 24px;
+			}
+			&--link-active {
+				border: 0;
+			}
+		}
+	}
+
+	/* footer */
+	footer {
+		height: 80px;
+		margin-top: -80px;
+		padding-top: 17px;
+	}
+	.footer {
+		&--left,
+		&--right {
+			float: none;
+			width: 100%;
+			padding: 0;
+			text-align: center;
+		}
+		&--right {
+			padding-top: 8px;
+		}
+	}
+
+	/*
+	.contacts {
+		"<i class=\"fa fa-phone\" aria-hidden=\"true\"></i>";
+	}
+	*/
+
+	/* about page */
+	.about {
+		margin-top: 24px;
+
+		&--left {
+			float: none;
+			width: 100%;
+		}
+		&--right {
+			float: none;
+			margin-left: 0;
+			width: 480px;
+		}
+
+		&--photo {
+			margin-top: 4px;
+			width: 165px;
+			height: 165px;
+			margin-bottom: -2px;
+		}
+		&--info {
+			height: 364px;
+			padding-left: 20px;
+			margin-top: 0;
+		}
+		&--download {
+			text-align: center;
+			width: 466px;
+		}
+	}
+	.mp-button {
+		margin-right: 0;
+	}
+
+	/* career page */
+	.career {
+		padding-top: 24px;
+		&--image {
+			margin: 0 auto;
+		}
+
+		&--left {
+			float: none;
+			width: 100%;
+			text-align: center;
+			padding-top: 16px;
+		}
+		&--right {
+			float: none;
+			width: 100%;
+		}
+
+		&--list {
+			margin-top: 20px;
+			margin-right: 16px;
+		}
+
+		&--item {
+			padding-left: 0;
+		}
+
+		&--block {
+			width: 440px;
+			&:after,
+			&:before {
+				display: none;
+			}
+		}
+		&--year {
+			display: none;
+		}
+	}
+	/* portfolio */
+	.portfolio {
+		&--list {
+			margin-top: 18px;
+		}
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+	/* mobile version */
+	/* hello page */
+	.welcome {
+		.entry {
+			width: 300px;
+			margin-left: -150px;
+			padding-top: 68px;
+		}
+		&--photo {
+			margin-left: -52px;
+			margin-top: -202px;
+			img {
+				width: 104px;
+				height: 104px;
+			}
+		}
+	}
+}
