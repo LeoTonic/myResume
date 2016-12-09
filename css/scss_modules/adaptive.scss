@@ -22,13 +22,16 @@
 	}
 
 	.container {
-		width: 750px;
+		width: 768px;
+		padding: 0 20px;
+		box-sizing: border-box;
 	}
 
 	.sidebar {
 		float: none;
 		display: block;
 		width: 100%;
+		margin-bottom: 40px;
 		.menu {
 			&--list {
 				margin-top: 0;
@@ -36,11 +39,16 @@
 			}
 			&--item {
 				display: inline-block;
+				vertical-align: middle;
+				margin-left: 30px;
+				margin-right: -5px;
+				&:first-child {
+					margin-left: 0;
+				}
 			}
 			&--link {
 				border: 0;
-				padding-top: 8px;
-				padding-right: 26px;
+				padding: 0;
 			}
 			&--link-active {
 				border: 0;
@@ -60,10 +68,11 @@
 	.about {
 		margin-top: 24px;
 		&--left {
-			width: 230px;
+			width: 35%;
 		}
 		&--right {
-			width: 444px;
+			margin-left: 0;
+			width: 65%;
 		}
 
 		&--photo {
@@ -74,9 +83,6 @@
 		&--info {
 			height: 380px;
 		}
-	}
-	.mp-button {
-		margin-right: 28px;
 	}
 	/* career page */
 	.career {
@@ -100,12 +106,12 @@
 	.portfolio {
 		&--list {
 			margin-top: 0;
+			margin-left: -3%;
 		}
 		&--item {
-			width: 228px;
-		}
-		&--desc {
-			padding: 16px 18px 16px;
+			width: 30%;
+			margin-left: 3%;
+			margin-bottom: 25px;
 		}
 	}
 }
@@ -131,35 +137,12 @@
 		}
 	}
 
-	.sidebar {
-		float: none;
-		display: block;
-		width: 100%;
-		.menu {
-			&--list {
-				margin-top: 0;
-			}
-			&--item {
-				display: inline-block;
-			}
-			&--link {
-				border: 0;
-				padding-top: 8px;
-				padding-right: 24px;
-			}
-			&--link-active {
-				border: 0;
-			}
-		}
-	}
-
 	/* header */
 	.header--left {
 		width: 75%;
 	}
 	.header--right {
 		width: 25%;
-		padding-top: 22px;
 	}
 
 	.contacts {
@@ -168,10 +151,19 @@
 		text-indent: 9999px;
 		white-space: nowrap;
 		background-image: url("../img/decor/phone-idl.png");
-		&:hover {
-			background-image: url("../img/decor/phone-hov.png");		
+
+		&--popup-triangle {
+			right: 12px;
 		}
 	}
+	.contacts-root {
+		&:hover {
+			.contacts {
+				background-image: url("../img/decor/phone-hov.png");
+			}
+		}
+	}
+
 	/* footer */
 	footer {
 		height: 80px;
@@ -245,7 +237,6 @@
 
 		&--list {
 			margin-top: 20px;
-			margin-right: 16px;
 		}
 
 		&--item {
@@ -253,7 +244,7 @@
 		}
 
 		&--block {
-			width: 440px;
+			width: 100%;
 			&:after,
 			&:before {
 				display: none;
@@ -267,6 +258,11 @@
 	.portfolio {
 		&--list {
 			margin-top: 18px;
+			margin-left: -2%;
+		}
+		&--item {
+			width: 48%;
+			margin-left: 2%;
 		}
 	}
 
@@ -301,6 +297,7 @@
 	.container {
 		width: 95%;
 		min-width: 270px;
+		padding: 0;
 	}
 	.page-content--title {
 		margin: 2px 0 2px 0;
@@ -364,5 +361,27 @@
 	}
 	.mp-button {
 		margin-right: 0;
+	}
+
+	/* career */
+	.career--item {
+		.career-title {
+			font-size: 18px;
+		}
+		.career--position,
+		.career--period {
+			font-size: 16px;
+		}
+	}
+	/* portfolio */
+	.portfolio {
+		&--list {
+			margin-left: 0;
+		}
+
+		&--item {
+			width: 100%;
+			margin-left: 0;
+		}
 	}
 }

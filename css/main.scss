@@ -66,10 +66,6 @@ html {
 		line-height: 1.42;
 		color: $clr-text-light;
 		background-color: $clr-body-bg;
-
-		-webkit-text-size-adjust: 100%;
-		-moz-text-size-adjust: none;
-		-ms-text-size-adjust: 100%;
 	}
 }
 
@@ -106,6 +102,7 @@ html {
 
 .ctl-button {
 	display: inline-block;
+	white-space: nowrap;
 	padding: 9px 11px;
 	border-width: 2px;
 	border-style: solid;

@@ -33,8 +33,15 @@
 		}
 	}
 
+	&--image {
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		height: 175px;
+	}
+
 	&--desc {
-		padding: 16px 18px 12px;
+		padding: 20px;
 	}
 
 	&--title {
@@ -50,11 +57,6 @@
 		margin-left: 2px;
 		margin-bottom: 10px;
 	}
-}
-
-.portfolio--image img {
-	width: 100%;
-	display: block;
 }
 
 .portfolio--icon, .portfolio--label {

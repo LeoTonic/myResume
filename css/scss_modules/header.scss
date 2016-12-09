@@ -17,7 +17,6 @@ header {
 
 .header--right {
 	text-align: right;
-	padding-top: 31px;
 }
 
 .user--photo,
@@ -37,6 +36,21 @@ header {
 	max-width: 250px;
 }
 
+.contacts-root {
+	position: relative;
+	margin-top: 30px;
+	display: inline-block;
+	&:hover {
+		.contacts {
+			color: $clr-text-active;
+			background-image: url("../img/decor/uline_hov.png");
+		}
+		.contacts--popup {
+			right: 0;
+		}
+	}
+}
+
 .contacts {
 	display: inline-block;
 	color: $clr-text-link;
@@ -45,8 +59,59 @@ header {
 	background-image: url("../img/decor/uline_idl.png");
 	background-repeat: repeat-x;
 	background-position: left 95%;
-	&:hover {
-		color: $clr-text-active;
-		background-image: url("../img/decor/uline_hov.png");	
+	&--popup {
+		padding: 15px 20px;
+		background-color: $clr-text-white;
+		border: 1px solid $clr-header-border;
+		border-radius: 10px;
+		position: absolute;
+		top: 100%;
+		//left: 40%;
+		right: -9999px;
+		//transform: translateX(-50%);
+		z-index: 100;
+		margin-top: 12px;
+		&:before {
+			content: "";
+			height: 30px;
+			left: 0;
+			right: 0;
+			top: -28px;
+			position: absolute;
+		}
+	}
+	&--popup-triangle {
+		position: absolute;
+		top: -8px;
+		right: 40px;
+		height: 14px;
+		width: 14px;
+		border-left: 1px solid $clr-header-border;
+		border-top: 1px solid $clr-header-border;
+		background-color: $clr-text-white;
+		transform: rotate(45deg);
+	}
+	&--popup-list {
+		list-style: none;
+	}
+
+	&--popup-item {
+		margin-bottom: 15px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&--popup-link {
+		white-space: nowrap;
+		font-size: $fnt-size-2;
+		font-weight: 100;
+		color: $clr-text-header;
+		text-decoration: none;
+		text-align: left;
+		display: block;
+	}
+	&--popup-icon {
+		color: $clr-text-link;
+		margin-right: 15px;
 	}
 }

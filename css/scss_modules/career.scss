@@ -44,6 +44,17 @@
 
 .career--item {
 	padding-left: 70px;
+	.career--title {
+		font-size: $fnt-size-1;
+		color: $clr-career-hdr;
+	}
+
+	.career--position,
+	.career--period {
+		font-weight: 100;
+		color: $clr-career-text;
+	}
+	
 	&:hover {
 		.career--block {
 			background-color: $clr-text-link;
@@ -96,16 +107,6 @@
 		top: 0;
 		bottom: 50%;
 	}
-}
-
-.career--title {
-	font-size: $fnt-size-1;
-	color: $clr-career-hdr;
-}
-
-.career--position, .career--period {
-	font-weight: 100;
-	color: $clr-career-text;
 }
 
 .career--year {

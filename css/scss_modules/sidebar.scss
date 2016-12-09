@@ -15,6 +15,7 @@
 	text-decoration: none;
 	color: $clr-text-header;
 	border-right: 6px solid transparent;
+	white-space: nowrap;
 	&:hover {
 		color: $clr-text-link;
 	}
