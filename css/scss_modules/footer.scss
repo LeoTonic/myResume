@@ -38,17 +38,28 @@ footer {
 	width: 31px;
 	height: 31px;
 	display: block;
-	background: no-repeat center center;
-}
+	background-image: url('../img/icons/socials.png');
+	background-repeat: no-repeat;
 
-$socials: fb, vk, tw;
+	&-fb {
+		background-position: 0%  0%;
+		&:hover {
+			background-position: 0% 103%;
+		}
+	}
 
-@each $st in $socials
-{
-    .social--link-#{$st} {
-        background-image: url('../img/icons/#{$st}_idl.png');
-        &:hover {
-            background-image: url('../img/icons/#{$st}_hov.png');
-        }
-    }
+	&-vk {
+		background-position: 50%  0%;
+		&:hover {
+			background-position: 50% 103%;
+		}
+	}
+
+	&-tw {
+		background-position: 100% 0%;
+		&:hover {
+			background-position: 100% 103%;
+		}
+	}
+
 }
