@@ -66,6 +66,10 @@ html {
 		line-height: 1.42;
 		color: $clr-text-light;
 		background-color: $clr-body-bg;
+
+		h1 {
+			margin: 0;
+		}
 	}
 }
 
@@ -96,7 +100,7 @@ html {
 		font-size: $fnt-size-0;
 		font-weight: 600;
 		color: $clr-text-header;
-		margin: 0 0 18px 0;
+		margin-bottom: 16px;
 	}
 }
 

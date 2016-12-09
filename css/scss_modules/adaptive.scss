@@ -53,6 +53,9 @@
 			&--link-active {
 				border: 0;
 			}
+			&--label {
+				margin-left: 0;
+			}
 		}
 	}
 
@@ -66,7 +69,6 @@
 
 	/* about page */
 	.about {
-		margin-top: 24px;
 		&--left {
 			width: 35%;
 		}
@@ -86,7 +88,6 @@
 	}
 	/* career page */
 	.career {
-		padding-top: 24px;
 		&--image {
 			width: 226px;
 			height: 226px;
@@ -133,7 +134,6 @@
 		float: none;
 		&--title {
 			text-align: center;
-			margin: 0 0 2px 0;
 		}
 	}
 
@@ -157,6 +157,7 @@
 		}
 	}
 	.contacts-root {
+		margin-top: 22px;
 		&:hover {
 			.contacts {
 				background-image: url("../img/decor/phone-hov.png");
@@ -166,10 +167,13 @@
 
 	/* footer */
 	footer {
-		height: 80px;
-		margin-top: -80px;
-		padding-top: 17px;
+		height: 95px;
+		margin-top: -95px;
+		.container {
+			padding-top: 15px;
+		}
 	}
+
 	.footer {
 		&--left,
 		&--right {
@@ -185,32 +189,29 @@
 
 	/* about page */
 	.about {
-		margin-top: 24px;
-
 		&--left {
 			float: none;
 			width: 100%;
+			margin-bottom: 15px;
 		}
 		&--right {
 			float: none;
 			margin-left: 0;
-			width: 480px;
+			width: 100%;
 		}
 
 		&--photo {
-			margin-top: 4px;
-			width: 165px;
-			height: 165px;
-			margin-bottom: -2px;
+			width: 170px;
+			height: 170px;
 		}
 		&--info {
-			height: 364px;
-			padding-left: 20px;
+			height: auto;
 			margin-top: 0;
 		}
 		&--download {
 			text-align: center;
-			width: 466px;
+			width: 100%;
+			margin-bottom: 50px;
 		}
 	}
 	.mp-button {
@@ -219,7 +220,6 @@
 
 	/* career page */
 	.career {
-		padding-top: 24px;
 		&--image {
 			margin: 0 auto;
 		}
@@ -228,7 +228,6 @@
 			float: none;
 			width: 100%;
 			text-align: center;
-			padding-top: 16px;
 		}
 		&--right {
 			float: none;
@@ -257,7 +256,6 @@
 	/* portfolio */
 	.portfolio {
 		&--list {
-			margin-top: 18px;
 			margin-left: -2%;
 		}
 		&--item {
@@ -298,9 +296,6 @@
 		width: 95%;
 		min-width: 270px;
 		padding: 0;
-	}
-	.page-content--title {
-		margin: 2px 0 2px 0;
 	}
 
 	.sidebar {
@@ -363,7 +358,7 @@
 		margin-right: 0;
 	}
 
-	/* career */
+	/* career */	
 	.career--item {
 		.career-title {
 			font-size: 18px;
