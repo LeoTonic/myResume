@@ -5,19 +5,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css\main.css">
 	<title>Добро пожаловать!</title>
+    <script>
+        function setBlockAnimation() {
+            var bw = document.getElementById('blockWelcome');
+            bw.classList.add('rubberBand');
+        }
+    </script>
 </head>
-<body class="welcome">
-    <div class="h-fix"></div>
-    <div class="entry">
-        <div class="entry--photo">
-            <img src="img\content\avat_hdr.jpg" alt="User Avatar">
-        </div>
-        <div class="entry--username">
-            Антон Леонов
-        </div>
-        <div class="entry--buttonblock">
-            <div class="entry--button">
-                <a href="about.html" class="en-button">Перейти на сайт</a>
+<body class="welcome" onload="setBlockAnimation()">
+    <div id='blockWelcome' class="welcome--block">
+        <div class="h-fix"></div>
+        <div class="entry">
+            <div class="entry--photo">
+                <img src="img\content\avat_hdr.jpg" alt="User Avatar">
+            </div>
+            <div class="entry--username">
+                Антон Леонов
+            </div>
+            <div class="entry--buttonblock">
+                <div class="entry--button">
+                    <a href="about.html" class="en-button">Перейти на сайт</a>
+                </div>
             </div>
         </div>
     </div>
