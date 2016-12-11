@@ -1,5 +1,5 @@
+/* laptop version */
 @media screen and (max-width: 992px) {
-	/* laptop version */
 	/* hello page */
 	.welcome {
 		.entry {
@@ -113,9 +113,8 @@
 		}
 	}
 }
-
+/* tablet version */
 @media screen and (max-width: 768px) {
-	/* tablet version */
 
 	/* main page */
 	.wrapper {
@@ -147,7 +146,9 @@
 		height: 32px;
 		text-indent: 9999px;
 		white-space: nowrap;
-		background-image: url("../img/decor/phone-idl.png");
+		background-image: url("../img/decor/phone.png");
+		background-repeat: no-repeat;
+		background-position: 0% 0%;
 
 		&--popup-triangle {
 			right: 12px;
@@ -157,7 +158,9 @@
 		margin-top: 22px;
 		&:hover {
 			.contacts {
-				background-image: url("../img/decor/phone-hov.png");
+				background-image: url("../img/decor/phone.png");
+				background-repeat: no-repeat;
+				background-position: 100% 0%;
 			}
 		}
 	}
@@ -262,9 +265,8 @@
 	}
 
 }
-
+/* mobile version */
 @media screen and (max-width: 480px) {
-	/* mobile version */
 	/* hello page */
 	.welcome {
 		.entry {
