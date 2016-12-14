@@ -46,7 +46,7 @@ header {
 			background-image: url("../img/decor/uline_hov.png");
 		}
 		.contacts--popup {
-			right: 0;
+			right: -60%;
 		}
 	}
 }
@@ -83,7 +83,8 @@ header {
 	&--popup-triangle {
 		position: absolute;
 		top: -8px;
-		right: 40px;
+		left: 50%;
+		margin-left: -7px;
 		height: 14px;
 		width: 14px;
 		border-left: 1px solid $clr-header-border;
