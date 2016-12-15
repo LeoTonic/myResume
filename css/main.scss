@@ -121,7 +121,6 @@ html {
 	@extend .ctl-button;
 	border-color: $clr-text-active;
 	color: $clr-text-active;
-	letter-spacing: 0.12ch;
 	&:hover {
 		color: $clr-text-white;
 		background-color: $clr-text-active;
@@ -131,7 +130,7 @@ html {
 	}
 	&--label {
 		@include iblock-center;
-		margin-left: 5px;
+		margin-left: 10px;
 	}
 }
 

@@ -129,12 +129,14 @@
 		margin-left: 0;
 		float: none;
 		&--title {
+			margin-bottom: 0;
 			text-align: center;
 		}
 	}
 
 	/* navigation */
 	.sidebar {
+		margin-bottom: 10px;
 		.menu--list {
 			text-align: justify;
 			&:after {
@@ -209,7 +211,6 @@
 		&--left {
 			float: none;
 			width: 100%;
-			margin-bottom: 15px;
 		}
 		&--right {
 			float: none;
@@ -222,7 +223,7 @@
 			height: 170px;
 		}
 		&--info {
-			height: auto;
+			height: 360px;
 			margin-top: 0;
 		}
 		&--download {
@@ -245,6 +246,7 @@
 			float: none;
 			width: 100%;
 			text-align: center;
+			margin-top: 20px;
 		}
 		&--right {
 			float: none;
@@ -301,6 +303,10 @@
 	}
 
 	/* header */
+	header {
+		margin-bottom: 15px;
+	}
+
 	.user--name {
 		max-width: 150px;
 		font-size: $fnt-size-3;
@@ -315,16 +321,21 @@
 	}
 
 	.sidebar {
+		margin-bottom: 12px;
+
 		.menu {
 			&--list {
-				margin-top: -5px;
+				text-align: center;
+				&:after {
+					width: 0;
+				}
 			}
 			&--item:first-child {
 				margin-left: 0;
 			}
 
 			&--item {
-				margin-left: 0;
+				margin-left: 7%;
 			}
 			&--link {
 				padding: 0;
@@ -342,8 +353,6 @@
 
 	/*about page */
 	.about {
-		margin-top: 12px;
-
 		&--left {
 			float: none;
 			width: 100%;
@@ -355,10 +364,8 @@
 		}
 
 		&--photo {
-			margin-top: 4px;
 			width: 140px;
 			height: 140px;
-			margin-bottom: -2px;
 		}
 		&--info {
 			font-size: 16px;
