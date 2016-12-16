@@ -6,13 +6,13 @@
 	<link rel="stylesheet" href="css\main.css">
 	<title>Добро пожаловать!</title>
     <script>
-        function setBlockAnimation() {
+        window.addEventListener('load', function() {
             var bw = document.getElementById('blockWelcome');
             bw.classList.add('rubberBand');
-        }
+        });
     </script>
 </head>
-<body class="welcome" onload="setBlockAnimation()">
+<body class="welcome">
     <div id='blockWelcome' class="welcome--block">
         <div class="h-fix"></div>
         <div class="entry">
